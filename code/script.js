@@ -7,6 +7,16 @@ let NeedMoneyUI=document.getElementById('NeedMoney')
 let SellMoneyUI=document.getElementById('SellMoney')
 let TryUpgradeUI=document.getElementById('TryUpgrade')
 let NameUI=document.getElementById('Name')
+let StoryModeStartButtonUI=document.getElementById('StoryMode')
+Fish.style.display='none'
+Water.style.display='none'
+UpgradeButtonUI.style.display='none'
+SellButtonUI.style.display='none'
+MoneyUI.style.display='none'
+NeedMoneyUI.style.display='none'
+SellMoneyUI.style.display='none'
+TryUpgradeUI.style.display='none'
+NameUI.style.display='none'
 let FishLevel=0
 let TryUpgrade=100
 let NeedMoney=100
@@ -28,6 +38,9 @@ for (i=0;i<19;i++){
     console.log(a, b, SellMoneyOfLevel[i],TryUpgradeOfLevel[i],i)
 }
 //Event
+StoryModeStartButtonUI.addEventListener('click',()=>{
+    StoryModeStart()
+})
 UpgradeButtonUI.addEventListener('click',()=>{
     var tu=TryUpgrade
     var num=Math.random()*100
@@ -54,6 +67,18 @@ SellButtonUI.addEventListener('click',()=>{
     SellMoney=0
 })
 //Funcion
+function StoryModeStart(){
+    StoryModeStartButtonUI.style.display='none'
+    Fish.style.display='block'
+    Water.style.display='block'
+    UpgradeButtonUI.style.display='block'
+    SellButtonUI.style.display='block'
+    MoneyUI.style.display='block'
+    NeedMoneyUI.style.display='block'
+    SellMoneyUI.style.display='block'
+    TryUpgradeUI.style.display='block'
+    NameUI.style.display='block'
+}
 function SuccsessUpgrade(){
     FishLevel+=1
     Money-=NeedMoney

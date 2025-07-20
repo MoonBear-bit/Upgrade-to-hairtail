@@ -5,6 +5,19 @@ body{
     z-index: 0;
     background-color: black;
 }
+.StoryMode{
+    position: absolute;
+    height: 70px;
+    width: 250px;
+    top: 465px;
+    left: 375px;
+    z-index: 11;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid lawngreen;
+    color: lawngreen;
+    font-size: 50px;
+}
 .Fish{
     position: absolute;
     height: 250px;
