@@ -1,0 +1,118 @@
+body{
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    z-index: 0;
+    background-color: black;
+}
+.Fish{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: 80px;
+    left: 375px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: black;
+    background-image: url(../image/0.png);
+    background-size: 250px 250px;
+    border: 2px solid white;
+}
+.Water{
+    position: absolute;
+    height: 260px;
+    width: 260px;
+    top: 75px;
+    left: 370px;
+    z-index: 11;
+    cursor: pointer;
+    background-color: rgb(0, 247, 255);
+    opacity: 0.5;
+    border: 2px solid white;
+}
+.Upgrade{
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    top: 350px;
+    left: 400px;
+    z-index: 11;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid lawngreen;
+    color: lawngreen;
+    font-size: 50px;
+}
+.Sell{
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    top: 430px;
+    left: 400px;
+    z-index: 11;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid lawngreen;
+    color: lawngreen;
+    font-size: 50px;
+}
+.Money{
+    position: absolute;
+    height: 70px;
+    width: 1000px;
+    top: 510px;
+    left: 0px;
+    z-index: 11;
+    background-color: black;
+    color: lawngreen;
+    text-align: center;
+    font-size: 50px;
+}
+.NeedMoney{
+    position: absolute;
+    height: 70px;
+    width: 1000px;
+    top: 590px;
+    left: 0px;
+    z-index: 11;
+    background-color: black;
+    color: lawngreen;
+    text-align: center;
+    font-size: 50px;
+}
+.SellMoney{
+    position: absolute;
+    height: 70px;
+    width: 1000px;
+    top: 670px;
+    left: 0px;
+    z-index: 11;
+    background-color: black;
+    color: lawngreen;
+    text-align: center;
+    font-size: 50px;
+}
+.TryUpgrade{
+    position: absolute;
+    height: 70px;
+    width: 1000px;
+    top: 750px;
+    left: 0px;
+    z-index: 11;
+    background-color: black;
+    color: lawngreen;
+    text-align: center;
+    font-size: 50px;
+}
+.Name{
+    position: absolute;
+    height: 70px;
+    width: 1000px;
+    top: 0px;
+    left: 0px;
+    z-index: 11;
+    background-color: black;
+    color: orange;
+    text-align: center;
+    font-size: 50px;
+}
