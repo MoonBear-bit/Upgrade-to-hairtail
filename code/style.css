@@ -71,7 +71,7 @@ body{
 }
 .Money{
     position: absolute;
-    height: 70px;
+    height: 50px;
     width: 1000px;
     top: 510px;
     left: 0px;
@@ -79,43 +79,43 @@ body{
     background-color: black;
     color: lawngreen;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 .NeedMoney{
     position: absolute;
-    height: 70px;
+    height: 50px;
     width: 1000px;
-    top: 590px;
+    top: 570px;
     left: 0px;
     z-index: 11;
     background-color: black;
     color: lawngreen;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 .SellMoney{
     position: absolute;
-    height: 70px;
+    height: 50px;
     width: 1000px;
-    top: 670px;
+    top: 630px;
     left: 0px;
     z-index: 11;
     background-color: black;
     color: lawngreen;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 .TryUpgrade{
     position: absolute;
-    height: 70px;
+    height: 50px;
     width: 1000px;
-    top: 750px;
+    top: 690px;
     left: 0px;
     z-index: 11;
     background-color: black;
     color: lawngreen;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 .Name{
     position: absolute;
@@ -128,4 +128,29 @@ body{
     color: orange;
     text-align: center;
     font-size: 50px;
+}
+.BuyTreatmentKit{
+    position: absolute;
+    height: 70px;
+    width: 350px;
+    top: 750px;
+    left: 320px;
+    z-index: 11;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid lawngreen;
+    color: lawngreen;
+    font-size: 30px;
+}
+.TreatmentKit{
+    position: absolute;
+    height: 50px;
+    width: 1000px;
+    top: 830px;
+    left: 0px;
+    z-index: 11;
+    background-color: black;
+    color: lawngreen;
+    text-align: center;
+    font-size: 30px;
 }
