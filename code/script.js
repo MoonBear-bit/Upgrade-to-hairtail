@@ -73,8 +73,8 @@ SellButtonUI.addEventListener('click',()=>{
     SellMoney=0
 })
 BuyTreatmentKitButtonUI.addEventListener('click',()=>{
-    if (Money>=20000){
-        Money-=20000
+    if (Money>=5000){
+        Money-=5000
         TreatmentKit+=1
     }else{
         alert('돈이 없습니다')
@@ -107,6 +107,7 @@ function FailedUpgrade(){
     Money-=NeedMoney
     if (TreatmentKit>=FishLevel){
         alert('그러나 치료했습니다')
+        TreatmentKit-=FishLevel
     }else if(TreatmentKit>0){
         alert('치료 키트는 갈치의 단계 만큼 소지해야 합니다.')
         FishLevel=0
