@@ -109,6 +109,10 @@ function FailedUpgrade(){
         alert('그러나 치료했습니다')
     }else if(TreatmentKit>0){
         alert('치료 키트는 갈치의 단계 만큼 소지해야 합니다.')
+        FishLevel=0
+        NeedMoney=100
+        TryUpgrade=100
+        SellMoney=0
     }else{
         FishLevel=0
         NeedMoney=100
