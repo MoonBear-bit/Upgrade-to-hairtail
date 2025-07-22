@@ -154,3 +154,16 @@ body{
     text-align: center;
     font-size: 30px;
 }
+.RandomMoney{
+    position: absolute;
+    height: 70px;
+    width: 350px;
+    top: 890px;
+    left: 320px;
+    z-index: 11;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid lawngreen;
+    color: lawngreen;
+    font-size: 30px;
+}
