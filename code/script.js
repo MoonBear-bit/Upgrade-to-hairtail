@@ -82,8 +82,8 @@ SellButtonUI.addEventListener('click',()=>{
     SellMoney=0
 })
 BuyTreatmentKitButtonUI.addEventListener('click',()=>{
-    if (Money>=10000){
-        Money-=10000
+    if (Money>=7000){
+        Money-=7000
         TreatmentKit+=1
     }else{
         alert('돈이 없습니다')
