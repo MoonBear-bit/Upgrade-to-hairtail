@@ -24,19 +24,19 @@ BuyTreatmentKitButtonUI.style.display='none'
 TreatmentKitUI.style.display='none'
 RandomMoneyButtonUI.style.display='none'
 let FishLevel=0
-let TryUpgrade=100
+let TryUpgrade=50
 let NeedMoney=100
 let SellMoney=0
-let Money=25000
+let Money=35000
 let TreatmentKit=0
 let Life=0
-let TryUpgradeOfLevel=[100,96,92,88,84,80,76,72,68,64,60,56,52,48,40,37,34,30,28,24,20,16,12,8,4,3,2,0]
+let TryUpgradeOfLevel=[50,98,96,94,92,90,85,82,78,75,72,69,66,63,60,57,54,51,48,45,42,39,36,33,30,27,10,0]
 let SellMoneyOfLevel=[0,45,50,500,900,2500,3500,17500,29500,55000,95000,169000,260000,470000,807000,1500000,2900000,4000000,6300000,11000000,17500000,30500000,50500000,86500000,150000000,250000000,435000000,
     715500000
 ]
 let WhyFailedArray=['교통사고로 인해','수산시장에 잡혀가서','스트레스로','미래를 깨닫고','반1란을 일으켜서','우울증으로','그냥','지1렁이의 심기를 건드려']
-let NameOfLevel=['알','새끼 갈치','어린 갈치','작은 갈치','갈치','큰 갈치','돌갈치','철갈치','은갈치','금갈치','티타늄갈치','다이아몬드갈치','텅스텐갈치','우라늄갈치','유전자 조작 갈치','재앙 갈치','노인 갈치','금품갈치',
-    '반도체 갈치','손질 갈치','냉동 갈치','갈치 구이','되살아난 갈치','총기 갈치','"전투 땅" 갈치','우주로 간 갈치','행성:갈치1972-N','지구:갈치'
+let NameOfLevel=['알','새끼 갈치','어린 갈치','작은 갈치','갈치','큰 갈치','돌갈치','철갈치','은갈치','금갈치','티타늄갈치','다이아몬드갈치','텅스텐갈치','우라늄갈치','유전자 조작 갈치',
+    '재앙 갈치','노인 갈치','금품갈치','반도체 갈치','손질 갈치','냉동 갈치','갈치 구이','되살아난 갈치','저격소총 갈치','위대한 저격수 갈치','우주미아 갈치','행성:갈치1972-N','지구:갈치'
 ]
 let i=0
 let a=100
@@ -78,7 +78,7 @@ SellButtonUI.addEventListener('click',()=>{
     Money+=SellMoney
     FishLevel=0
     NeedMoney=100
-    TryUpgrade=100
+    TryUpgrade=TryUpgradeOfLevel[0]
     SellMoney=0
 })
 BuyTreatmentKitButtonUI.addEventListener('click',()=>{
@@ -115,19 +115,19 @@ function SuccsessUpgrade(){
 }
 function FailedUpgrade(){
     Money-=NeedMoney
-    if (TreatmentKit>=FishLevel){
+    if (TreatmentKit>=FishLevel && FishLevel!==0){
         alert('그러나 치료했습니다')
         TreatmentKit-=FishLevel
-    }else if(TreatmentKit>0){
+    }else if(TreatmentKit>0 && FishLevel!==0){
         alert('치료 키트는 갈치의 단계 만큼 소지해야 합니다.')
         FishLevel=0
         NeedMoney=100
-        TryUpgrade=100
+        TryUpgrade=TryUpgradeOfLevel[0]
         SellMoney=0
     }else{
         FishLevel=0
         NeedMoney=100
-        TryUpgrade=100
+        TryUpgrade=TryUpgradeOfLevel[0]
         SellMoney=0
     }
 }
