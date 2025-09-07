@@ -1,7 +1,5 @@
 이 게임은 전형적인 강화 게임입니다.
 
-앞으로도 TWMB 중 대부분을 만들 예정입니다.
-
 접속:
   https://moonbear-bit.github.io/Upgrade-to-hairtail/
 
